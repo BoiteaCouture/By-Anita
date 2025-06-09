@@ -2,12 +2,13 @@
   --primary-color: #000000;
   --secondary-color: #000000;
   --background-color: #f8f8f8;
-  --header-footer-bg: #fff7e6; /* beige doux */
+  --header-footer-bg: #fff7e6;
   --text-color: #000000;
   --text-color-light: #000000;
   --icon-color: #000000;
   --button-hover-color: #34495e;
-  --spacing-sections: 5rem;
+  --header-height: 120px;
+  --spacing-sections: 2rem; 
 }
 
 /* BASE */
@@ -27,6 +28,7 @@ body {
   padding: 0;
   background-color: var(--background-color);
   color: var(--text-color);
+  padding-top: var(--header-height); 
 }
 .container {
   width: 100%;
@@ -39,6 +41,7 @@ h1, h2 {
   transform: translateX(-50px);
   transition: opacity 0.5s ease, transform 0.9s ease;
   font-family: "Roboto", sans-serif;
+  margin-top: 1rem; 
 }
 h1.visible, h2.visible {
   opacity: 1;
@@ -59,6 +62,30 @@ input, textarea, select, button {
 }
 
 /* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--header-footer-bg);
+  z-index: 1001;
+  background-image: url('/public/assets/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  overflow: hidden;
+  color: var(--text-color);
+}
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 247, 230, 0.82);
+  z-index: 1;
+  pointer-events: none;
+}
 .head-container {
   display: flex;
   justify-content: space-between;
@@ -66,8 +93,10 @@ input, textarea, select, button {
   width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
-  height: 120px;
+  height: 100%;
   color: var(--text-color);
+  position: relative;
+  z-index: 2;
 }
 .left-section, .right-section {
   flex: 1;
@@ -77,9 +106,9 @@ input, textarea, select, button {
   text-align: center;
 }
 .logo {
-  max-height: 140px;
+  max-height: 100px; 
   width: auto;
-  padding: 0.5rem;
+  padding: 0.25rem;
   margin: 0 auto;
 }
 .back-button {
@@ -93,35 +122,6 @@ body.confidentialite .back-button {
 }
 .right-section {
   text-align: right;
-}
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--header-footer-bg);
-  z-index: 1001;
-  min-height: 120px;
-  background-image: url('/public/assets/background.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  position: relative;
-  overflow: hidden;
-  color: var(--text-color);
-}
-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 247, 230, 0.82); /* beige overlay pour lisibilité */
-  z-index: 1;
-  pointer-events: none;
-}
-.head-container {
-  position: relative;
-  z-index: 2;
 }
 .head-container a,
 .head-container i,
@@ -138,10 +138,10 @@ header::before {
 
 /* MAIN & SECTIONS */
 main {
-  padding-top: 2rem;
+  padding-top: 0.5rem; 
 }
 section {
-  padding-top: 4rem;
+  padding-top: 1rem;
 }
 
 /* NAVIGATION */
@@ -162,7 +162,7 @@ section {
 nav {
   position: fixed;
   width: 100%;
-  top: 7rem;
+  top: var(--header-height);
   left: 0;
   z-index: 1000;
   pointer-events: none;
@@ -210,12 +210,12 @@ nav i {
 
 /* HOME */
 #home {
-  padding-top: 1rem;
+  padding-top: 0; 
 }
 #home h1 {
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem; 
+  margin-bottom: 1.5rem;
 }
 .content-wrapper {
   display: flex;
@@ -259,11 +259,11 @@ nav i {
   transform: scale(1.05);
 }
 #creation {
-  padding-top: var(--spacing-sections);
+  padding-top: 0; 
 }
 #creation h2 {
   text-align: right;
-  margin-top: 3rem;
+  margin-top: 1rem; 
 }
 #creation .content-wrapper {
   display: flex;
@@ -299,11 +299,36 @@ nav i {
   justify-content: center;
 }
 
+/* CARD */
+.card {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: white;
+}
+.card-image {
+  margin-bottom: 1rem;
+}
+.card-content {
+  text-align: center;
+}
+.cta {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--button-hover-color);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
 /* FOOTER */
 footer {
   background-color: var(--header-footer-bg);
   color: var(--text-color);
   padding: 1rem 0;
+  margin-top: 2rem;
 }
 .footer-content {
   display: flex;
@@ -358,5 +383,11 @@ footer {
   }
   #burger-menu {
     display: none;
+  }
+  body {
+    padding-top: var(--header-height);
+  }
+  #home h1, #creation h2 {
+    margin-top: 1.5rem;
   }
 }
