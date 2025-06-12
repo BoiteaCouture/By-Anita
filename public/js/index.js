@@ -75,3 +75,14 @@ document.addEventListener("DOMContentLoaded", function () {
     idx = (idx + n + images.length) % images.length;
     images[idx].classList.add("active");
   }
+
+  document.querySelectorAll(".accordion-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const expanded = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", !expanded);
+      const content = document.getElementById(
+        btn.getAttribute("aria-controls")
+      );
+      content.hidden = expanded;
+    });
+  });

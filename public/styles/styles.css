@@ -518,6 +518,60 @@ nav i {
   right: 10px;
 }
 
+.accordion-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #ffe7b3 0%, #f8f8f8 100%);
+  color: #2d3436;
+  font-family: 'Quicksand', 'Comic Sans MS', Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 16px;
+  margin: 1.2rem 0 0.3rem 0;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 4px 18px rgba(237, 184, 88, 0.10);
+  cursor: pointer;
+  transition: background 0.25s, box-shadow 0.25s, color 0.2s;
+  position: relative;
+  outline: none;
+  overflow: hidden;
+}
+
+.accordion-btn:hover,
+.accordion-btn:focus,
+.accordion-btn[aria-expanded="true"] {
+  background: linear-gradient(90deg, #ffd580 0%, #ffe7b3 100%);
+  color: #b86e00;
+  box-shadow: 0 6px 28px rgba(237, 184, 88, 0.15);
+}
+
+.accordion-arrow {
+  font-size: 1.7rem;
+  margin-left: 1.2rem;
+  transition: transform 0.3s cubic-bezier(.77,0,.18,1.01);
+  color: #f4a261;
+}
+
+.accordion-btn[aria-expanded="true"] .accordion-arrow {
+  transform: rotate(180deg) scale(1.2);
+  color: #e17055;
+}
+
+/* Optionnel : petite animation de rebond à l'ouverture */
+.accordion-btn[aria-expanded="true"] {
+  animation: bounce 0.3s;
+}
+@keyframes bounce {
+  0% { transform: scale(1);}
+  30% { transform: scale(1.06);}
+  60% { transform: scale(0.97);}
+  100% { transform: scale(1);}
+}
+
 
 /* CARD */
 .card {

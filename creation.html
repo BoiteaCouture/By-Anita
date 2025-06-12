@@ -58,158 +58,191 @@
     </section>
       
     
-    <section id="sacs" class="categorie-creation">
+    <section id="creation">
         <div class="container">
-            <h3>Sacs</h3>
-            <p class="categorie-intro">
-                Sacs à main, cabas, tote-bags... Des modèles uniques cousus main pour toutes les occasions.
+    
+            <h2>Mes Créations</h2>
+            <p class="intro-creation">
+                Découvrez ci-dessous toutes mes réalisations classées par univers. Cliquez sur une catégorie pour afficher
+                ou masquer son contenu.
             </p>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac12.jpeg" alt="Sac banane" class="carousel-img active">
-                    <img src="public/assets/sacs/sac12-1.jpeg" alt="Sac banane" class="carousel-img">
-                    <img src="public/assets/sacs/sac12-2.jpeg" alt="Sac banane" class="carousel-img">
-                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
-                </div>
-                <div class="card-content">
-                    <h4>Sac banane</h4>
-                    <p>Une petite banane pratique et stylée, parfaite pour les sorties décontractées.</p>
-                </div>
-            </div>
+            <div class="accordion-container">
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac4.jpeg" alt="Sac Isotherme" class="carousel-img active">
-                    <img src="public/assets/sacs/sac4-1.jpeg" alt="Sac Isotherme" class="carousel-img">
-                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
-                </div>
-                <div class="card-content">
-                    <h4>Sac Isotherme</h4>
-                    <p>Un sac isotherme pratique pour transporter vos boissons tout en gardant la chaleur ou la fraîcheur.
-                    </p>
-                </div>
-            </div>
+                <button class="accordion-btn" aria-expanded="false" aria-controls="sacs-content" id="sacs-btn">
+                    Sacs
+                    <span class="accordion-arrow">&#9662;</span>
+                </button>
+                <div class="accordion-content" id="sacs-content" role="region" aria-labelledby="sacs-btn" hidden>
+                    <div class="categorie-creation">
+                        <h3>Sacs</h3>
+                        <p class="categorie-intro">
+                            Sacs à main, cabas, tote-bags... Des modèles uniques cousus main pour toutes les occasions.
+                        </p>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac6.jpeg" alt="Sac à main" class="carousel-img active">
-                    <img src="public/assets/sacs/sac6-1.jpeg" alt="Sac à main" class="carousel-img">
-                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
-                </div>
-                <div class="card-content">
-                    <h4>Sac à main</h4>
-                    <p>Sac à main + pochettes, avec rangement intérieur, idéal pour le quotidien.</p>
-                </div>
-            </div>
+                        <!-- Card 1 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac12.jpeg" alt="Sac banane" class="carousel-img active">
+                                <img src="public/assets/sacs/sac12-1.jpeg" alt="Sac banane" class="carousel-img">
+                                <img src="public/assets/sacs/sac12-2.jpeg" alt="Sac banane" class="carousel-img">
+                                <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                                <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                            </div>
+                            <div class="card-content">
+                                <h4>Sac banane</h4>
+                                <p>Une petite banane pratique et stylée, parfaite pour les sorties décontractées.</p>
+                            </div>
+                        </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac1.jpeg" alt="Sac à main" class="carousel-img">
-                    <img src="public/assets/sacs/sac5.jpeg" alt="Sac à main" class="carousel-img active">
-                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
-                </div>
-                <div class="card-content">
-                    <h4>Sac à main</h4>
-                    <p>Sac à main élégant et pratique en simili cuir.</p>
-                </div>
-            </div>
+                        <!-- Card 2 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac4.jpeg" alt="Sac Isotherme" class="carousel-img active">
+                                <img src="public/assets/sacs/sac4-1.jpeg" alt="Sac Isotherme" class="carousel-img">
+                                <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                                <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                            </div>
+                            <div class="card-content">
+                                <h4>Sac Isotherme</h4>
+                                <p>Un sac isotherme pratique pour transporter vos boissons tout en gardant la chaleur ou la
+                                    fraîcheur.</p>
+                            </div>
+                        </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac2.jpeg" alt="Petit sac" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Petit sac</h4>
-                    <p>Petit sac banane discret et facile à transporter.</p>
-                </div>
-            </div>
+                        <!-- Card 3 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac6.jpeg" alt="Sac à main" class="carousel-img active">
+                                <img src="public/assets/sacs/sac6-1.jpeg" alt="Sac à main" class="carousel-img">
+                                <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                                <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                            </div>
+                            <div class="card-content">
+                                <h4>Sac à main</h4>
+                                <p>Sac à main + pochettes, avec rangement intérieur, idéal pour le quotidien.</p>
+                            </div>
+                        </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac3.jpeg" alt="Sac à main" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Sac à main</h4>
-                    <p>Sobre et élégant pour sortir.</p>
-                </div>
-            </div>
+                        <!-- Card 4 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac1.jpeg" alt="Sac à main" class="carousel-img">
+                                <img src="public/assets/sacs/sac5.jpeg" alt="Sac à main" class="carousel-img active">
+                                <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                                <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                            </div>
+                            <div class="card-content">
+                                <h4>Sac à main</h4>
+                                <p>Sac à main élégant et pratique en simili cuir.</p>
+                            </div>
+                        </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac7.jpeg" alt="Sac à main" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Sac à main</h4>
-                    <p>Sac tout rond et tout mignon.</p>
-                </div>
-            </div>
+                        <!-- Card 5 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac2.jpeg" alt="Petit sac" class="carousel-img active">
+                            </div>
+                            <div class="card-content">
+                                <h4>Petit sac</h4>
+                                <p>Petit sac banane discret et facile à transporter.</p>
+                            </div>
+                        </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac8.jpeg" alt="Sacoche" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Sacoche</h4>
-                    <p>Colorée et fun.</p>
-                </div>
-            </div>
+                        <!-- Card 6 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac3.jpeg" alt="Sac à main" class="carousel-img active">
+                            </div>
+                            <div class="card-content">
+                                <h4>Sac à main</h4>
+                                <p>Sobre et élégant pour sortir.</p>
+                            </div>
+                        </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac9.jpeg" alt="Tote Bag" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Tote Bag</h4>
-                    <p>On y met ce qu'on veut : ses courses ou son maillot de bain.</p>
-                </div>
-            </div>
+                        <!-- Card 7 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac7.jpeg" alt="Sac à main" class="carousel-img active">
+                            </div>
+                            <div class="card-content">
+                                <h4>Sac à main</h4>
+                                <p>Sac tout rond et tout mignon.</p>
+                            </div>
+                        </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac10.jpeg" alt="Tote Bag" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Tote Bag</h4>
-                    <p>Idéal pour les courses et se replie pour le ranger.</p>
-                </div>
-            </div>
+                        <!-- Card 8 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac8.jpeg" alt="Sacoche" class="carousel-img active">
+                            </div>
+                            <div class="card-content">
+                                <h4>Sacoche</h4>
+                                <p>Colorée et fun.</p>
+                            </div>
+                        </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac11.jpeg" alt="Banane Sacoche" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Banane Sacoche</h4>
-                    <p>Peut se porter discrètement sous les vêtements, idéale pour les voyages.</p>
-                </div>
-            </div>
+                        <!-- Card 9 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac9.jpeg" alt="Tote Bag" class="carousel-img active">
+                            </div>
+                            <div class="card-content">
+                                <h4>Tote Bag</h4>
+                                <p>On y met ce qu'on veut : ses courses ou son maillot de bain.</p>
+                            </div>
+                        </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac13.jpeg" alt="Banane" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Banane</h4>
-                    <p>En bandoulière, vous pouvez tout y mettre.</p>
-                </div>
-            </div>
+                        <!-- Card 10 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac10.jpeg" alt="Tote Bag" class="carousel-img active">
+                            </div>
+                            <div class="card-content">
+                                <h4>Tote Bag</h4>
+                                <p>Idéal pour les courses et se replie pour le ranger.</p>
+                            </div>
+                        </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/sacs/sac14.jpeg" alt="Banane" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Banane</h4>
-                    <p>À porter en bandoulière ou à la taille, elle est pratique et simple.</p>
+                        <!-- Card 11 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac11.jpeg" alt="Banane Sacoche" class="carousel-img active">
+                            </div>
+                            <div class="card-content">
+                                <h4>Banane Sacoche</h4>
+                                <p>Peut se porter discrètement sous les vêtements, idéale pour les voyages.</p>
+                            </div>
+                        </div>
+    
+                        <!-- Card 12 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac13.jpeg" alt="Banane" class="carousel-img active">
+                            </div>
+                            <div class="card-content">
+                                <h4>Banane</h4>
+                                <p>En bandoulière, vous pouvez tout y mettre.</p>
+                            </div>
+                        </div>
+    
+                        <!-- Card 13 -->
+                        <div class="card">
+                            <div class="carousel">
+                                <img src="public/assets/sacs/sac14.jpeg" alt="Banane" class="carousel-img active">
+                            </div>
+                            <div class="card-content">
+                                <h4>Banane</h4>
+                                <p>À porter en bandoulière ou à la taille, elle est pratique et simple.</p>
+                            </div>
+                        </div>
+    
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
     
       
     
