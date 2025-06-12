@@ -3,6 +3,7 @@
   --secondary-color: #000000;
   --background-color: #f8f8f8;
   --header-footer-bg: #fff7e6;
+  --cardbg-color: #fff7e6;
   --text-color: #000000;
   --text-color-light: #000000;
   --icon-color: #000000;
@@ -106,11 +107,12 @@ header::before {
   text-align: center;
 }
 .logo {
-  max-height: 100px; 
+  max-height: 160px;   
   width: auto;
-  padding: 0.25rem;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
+
 .back-button {
   display: none;
   color: var(--text-color);
@@ -241,6 +243,66 @@ nav i {
   clear: both;
   margin-top: 1rem;
 }
+
+.hero-listes {
+  padding: 2.5rem 0 2rem 0;
+  margin-bottom: 2rem;
+  }
+.hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.hero-title {
+  font-size: 2.2rem;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.04em;
+}
+.hero-lists-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.hero-list {
+  flex: 1;
+  background: var(--cardbg-color);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 1.5rem 1rem;
+}
+.hero-list-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.hero-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hero-list li {
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+.hero-list a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.hero-list a:hover {
+  color: #34495e;
+  text-decoration: underline;
+}
+
 
 /* CREATION */
 .card-creation { 
@@ -389,5 +451,10 @@ footer {
   }
   #home h1, #creation h2 {
     margin-top: 1.5rem;
+  }
+  .hero-lists-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
   }
 }
