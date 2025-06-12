@@ -52,7 +52,7 @@
             </div>
             <p class="intro-creation">
                 Découvrez ci-dessous toutes mes réalisations, classées par univers : sacs, pochettes, macramé, accessoires,
-                matériel... Cliquez sur une catégorie pour voir tous les modèles !
+                matériel... Cliquez sur la catégorie de votre choix pour voir tous les modèles !
             </p>
         </div>
     </section>
@@ -248,495 +248,518 @@
     
     <section id="pochettes" class="categorie-creation">
         <div class="container">
-            <h3>Pochettes</h3>
-            <p class="categorie-intro">
-                Pochettes, trousses et petits rangements pratiques et personnalisés.
-            </p>
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette20.jpeg" alt="Pochette poignet" class="carousel-img active">
-                    <img src="public/assets/pochettes/pochette20-1.jpeg" alt="Pochette poignet" class="carousel-img">
-                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
-                </div>
-                <div class="card-content">
-                    <h4>Pochette poignet</h4>
-                    <p>
-                        Petite pochette idéale pour aller courir ou aller au marché et mettre son argent.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette9.jpeg" alt="Lingette démaquillante"
-                        class="carousel-img active">
-                    <img src="public/assets/pochettes/pochette9-1.jpeg" alt="Lingette démaquillante" class="carousel-img">
-                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
-                </div>
-                <div class="card-content">
-                    <h4>Lingette démaquillante</h4>
-                    <p>
-                        Pochette avec lingettes démaquillantes lavables, pour un geste écolo et pratique.
-                    </p>
-                </div>
-            </div>
+            <!-- Bouton dropdown stylisé -->
+            <button class="accordion-btn" aria-expanded="false" aria-controls="pochettes-content" id="pochettes-btn">
+                Pochettes
+                <span class="accordion-arrow">&#9662;</span>
+            </button>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette8.jpeg" alt="Pochette de toilette" class="carousel-img">
-                    <img src="public/assets/pochettes/pochette8-1.jpeg" alt="Pochette de toilette"
-                        class="carousel-img active">
-                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
-                </div>
-                <div class="card-content">
-                    <h4>Pochette de toilette</h4>
-                    <p>
-                        Petite pochette de toilette idéale pour le voyage.
-                    </p>
-                </div>
-            </div>
+            <!-- Contenu masqué/affiché au clic -->
+            <div class="accordion-content" id="pochettes-content" role="region" aria-labelledby="pochettes-btn" hidden>
+                <h3>Pochettes</h3>
+                <p class="categorie-intro">
+                    Pochettes, trousses et petits rangements pratiques et personnalisés.
+                </p>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette6.jpeg" alt="Pochette pique-nique" class="carousel-img">
-                    <img src="public/assets/pochettes/pochette6-1.jpeg" alt="Pochette pique-nique"
-                        class="carousel-img active">
-                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette20.jpeg" alt="Pochette poignet"
+                            class="carousel-img active">
+                        <img src="public/assets/pochettes/pochette20-1.jpeg" alt="Pochette poignet" class="carousel-img">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>Pochette poignet</h4>
+                        <p>Petite pochette idéale pour aller courir ou aller au marché et mettre son argent.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Pochette pique-nique</h4>
-                    <p>
-                        Pochette idéale pour ranger ces couverts pour un petit pique-nique.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette4-1.jpeg" alt="Porte document" class="carousel-img">
-                    <img src="public/assets/pochettes/pochette4-2.jpeg" alt="Porte document" class="carousel-img active">
-                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette9.jpeg" alt="Lingette démaquillante"
+                            class="carousel-img active">
+                        <img src="public/assets/pochettes/pochette9-1.jpeg" alt="Lingette démaquillante"
+                            class="carousel-img">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>Lingette démaquillante</h4>
+                        <p>Pochette avec lingettes démaquillantes lavables, pour un geste écolo et pratique.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Porte document</h4>
-                    <p>
-                        Porte document pour ranger vos papiers importants, avec plusieurs poches intérieures.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette3-1.jpeg" alt="Trousse de voyage" class="carousel-img active">
-                    <img src="public/assets/pochettes/pochette3-2.jpeg" alt="Trousse de voyage" class="carousel-img">
-                    <img src="public/assets/pochettes/pochette3-3.jpeg" alt="Trousse de voyage" class="carousel-img">
-                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette8.jpeg" alt="Pochette de toilette" class="carousel-img">
+                        <img src="public/assets/pochettes/pochette8-1.jpeg" alt="Pochette de toilette"
+                            class="carousel-img active">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>Pochette de toilette</h4>
+                        <p>Petite pochette de toilette idéale pour le voyage.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Trousse de voyage</h4>
-                    <p>
-                        Trousse de voyage avec plusieurs poches intérieures pour organiser vos affaires de toilettes.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette1.jpeg" alt="Pochettes assorties" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette6.jpeg" alt="Pochette pique-nique" class="carousel-img">
+                        <img src="public/assets/pochettes/pochette6-1.jpeg" alt="Pochette pique-nique"
+                            class="carousel-img active">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>Pochette pique-nique</h4>
+                        <p>Pochette idéale pour ranger ses couverts pour un petit pique-nique.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Pochettes assorties</h4>
-                    <p>
-                        Pochettes assorties pour ranger vos petits accessoires, avec un joli motif coloré.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette10.jpeg" alt="Pochette" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette4-1.jpeg" alt="Porte document" class="carousel-img">
+                        <img src="public/assets/pochettes/pochette4-2.jpeg" alt="Porte document"
+                            class="carousel-img active">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>Porte document</h4>
+                        <p>Porte document pour ranger vos papiers importants, avec plusieurs poches intérieures.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Pochette</h4>
-                    <p>
-                        Pochette colorée pour ranger vos papiers utiles comme vos ordonnances.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette11.jpeg" alt="Trousse pochette" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette3-1.jpeg" alt="Trousse de voyage"
+                            class="carousel-img active">
+                        <img src="public/assets/pochettes/pochette3-2.jpeg" alt="Trousse de voyage" class="carousel-img">
+                        <img src="public/assets/pochettes/pochette3-3.jpeg" alt="Trousse de voyage" class="carousel-img">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>Trousse de voyage</h4>
+                        <p>Trousse de voyage avec plusieurs poches intérieures pour organiser vos affaires de toilettes.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Trousse pochette</h4>
-                    <p>
-                        Trousse toute mignonne pour ranger vos crayons ou vos petits accessoires pour se maquiller.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette12.jpeg" alt="Trousse de voyage" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette1.jpeg" alt="Pochettes assorties"
+                            class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Pochettes assorties</h4>
+                        <p>Pochettes assorties pour ranger vos petits accessoires, avec un joli motif coloré.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Trousse de voyage</h4>
-                    <p>
-                        Idéale pour les voyages, cette trousse permet de ranger vos produits de beauté et accessoires.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette13.jpeg" alt="Protection téléphone"
-                        class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette10.jpeg" alt="Pochette" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Pochette</h4>
+                        <p>Pochette colorée pour ranger vos papiers utiles comme vos ordonnances.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Protection téléphone</h4>
-                    <p>
-                        Pochette pour protéger votre téléphone, avec un joli motif coloré.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette14.jpeg" alt="Mini pochette" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette11.jpeg" alt="Trousse pochette"
+                            class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Trousse pochette</h4>
+                        <p>Trousse toute mignonne pour ranger vos crayons ou vos petits accessoires pour se maquiller.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Mini pochette</h4>
-                    <p>
-                        Petite pochette pour ranger vos clés ou votre monnaie, pratique et colorée.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette15.jpeg" alt="Pochettes" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette12.jpeg" alt="Trousse de voyage"
+                            class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Trousse de voyage</h4>
+                        <p>Idéale pour les voyages, cette trousse permet de ranger vos produits de beauté et accessoires.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Pochettes</h4>
-                    <p>
-                        Des pochettes qui se rendent utiles quand votre sac est plein.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette16.jpeg" alt="Petite trousse" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette13.jpeg" alt="Protection téléphone"
+                            class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Protection téléphone</h4>
+                        <p>Pochette pour protéger votre téléphone, avec un joli motif coloré.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Petite trousse</h4>
-                    <p>
-                        Elle peut contenir vos crayons, vos clés ou votre monnaie et elle s'ouvre des deux cotés.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette17.jpeg" alt="Pochette" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette14.jpeg" alt="Mini pochette" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Mini pochette</h4>
+                        <p>Petite pochette pour ranger vos clés ou votre monnaie, pratique et colorée.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Pochette</h4>
-                    <p>
-                        Une pochette colorée pour ranger vos petits accessoires, avec un joli motif.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette18.jpeg" alt="Pochette téléphone" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette15.jpeg" alt="Pochettes" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Pochettes</h4>
+                        <p>Des pochettes qui se rendent utiles quand votre sac est plein.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Pochette téléphone</h4>
-                    <p>
-                        A l'abri des regards indiscrets, cette pochette permet de ranger votre téléphone et vos accessoires.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette19.jpeg" alt="Pochettes Lunettes" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette16.jpeg" alt="Petite trousse" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Petite trousse</h4>
+                        <p>Elle peut contenir vos crayons, vos clés ou votre monnaie et elle s'ouvre des deux côtés.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Pochettes Lunettes</h4>
-                    <p>
-                        Pochettes pour lunettes, avec un joli motif coloré, pour protéger vos lunettes de soleil ou de vue,
-                        pour lui et pour elle.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette2.jpeg" alt="Trousse de toilette" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette17.jpeg" alt="Pochette" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Pochette</h4>
+                        <p>Une pochette colorée pour ranger vos petits accessoires, avec un joli motif.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Trousse de toilette</h4>
-                    <p>
-                        Trousse de toilette avec plusieurs poches intérieures pour organiser vos produits de beauté.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/pochettes/pochette5.jpeg" alt="Trousses" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette18.jpeg" alt="Pochette téléphone"
+                            class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Pochette téléphone</h4>
+                        <p>À l'abri des regards indiscrets, cette pochette permet de ranger votre téléphone et vos
+                            accessoires.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Trousses</h4>
-                    <p>
-                        Pour se maquiller ou pour dessiner, ces trousses sont idéales pour ranger vos crayons et pinceaux.
-                    </p>
+    
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette19.jpeg" alt="Pochettes Lunettes"
+                            class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Pochettes Lunettes</h4>
+                        <p>Pochettes pour lunettes, avec un joli motif coloré, pour protéger vos lunettes de soleil ou de
+                            vue, pour lui et pour elle.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette2.jpeg" alt="Trousse de toilette"
+                            class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Trousse de toilette</h4>
+                        <p>Trousse de toilette avec plusieurs poches intérieures pour organiser vos produits de beauté.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/pochettes/pochette5.jpeg" alt="Trousses" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Trousses</h4>
+                        <p>Pour se maquiller ou pour dessiner, ces trousses sont idéales pour ranger vos crayons et
+                            pinceaux.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+      
     
     
     <section id="macrame" class="categorie-creation">
         <div class="container">
-            <h3>Macramé</h3>
-            <p class="categorie-intro">
-                Décorations murales, suspensions et accessoires en macramé faits main.
-            </p>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/macrame/macra1.jpeg" alt="Ange" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Ange</h4>
-                    <p>
-                        Un ange en macramé pour apporter une touche bohème à votre décoration intérieure.
-                    </p>
-                </div>
-            </div>
+            <!-- Bouton dropdown stylisé -->
+            <button class="accordion-btn" aria-expanded="false" aria-controls="macrame-content" id="macrame-btn">
+                Macramé
+                <span class="accordion-arrow">&#9662;</span>
+            </button>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/macrame/macra2.jpeg" alt="Hibou" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Hibou</h4>
-                    <p>
-                        Un hibou en macramé pour une décoration originale et pleine de charme.
-                    </p>
-                </div>
-            </div>
+            <!-- Contenu masqué/affiché au clic -->
+            <div class="accordion-content" id="macrame-content" role="region" aria-labelledby="macrame-btn" hidden>
+                <h3>Macramé</h3>
+                <p class="categorie-intro">
+                    Décorations murales, suspensions et accessoires en macramé faits main.
+                </p>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/macrame/macra3.jpeg" alt="Attrape rêves" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/macrame/macra1.jpeg" alt="Ange" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Ange</h4>
+                        <p>
+                            Un ange en macramé pour apporter une touche bohème à votre décoration intérieure.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Attrape rêves</h4>
-                    <p>
-                        Un attrape rêves en macramé pour apporter une touche mystique à votre intérieur.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/macrame/macra4.jpeg" alt="Suspension Etoilé" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/macrame/macra2.jpeg" alt="Hibou" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Hibou</h4>
+                        <p>
+                            Un hibou en macramé pour une décoration originale et pleine de charme.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Suspension Etoilé</h4>
-                    <p>
-                        Une suspension étoilée en macramé pour illuminer votre espace avec élégance.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/macrame/macra5.jpeg" alt="Attrape rêves" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/macrame/macra3.jpeg" alt="Attrape rêves" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Attrape rêves</h4>
+                        <p>
+                            Un attrape rêves en macramé pour apporter une touche mystique à votre intérieur.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Attrape rêves</h4>
-                    <p>
-                        Un attrape rêves en macramé pour ajouter une touche de magie à votre décoration.
-                    </p>
+    
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/macrame/macra4.jpeg" alt="Suspension Etoilé" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Suspension Etoilé</h4>
+                        <p>
+                            Une suspension étoilée en macramé pour illuminer votre espace avec élégance.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/macrame/macra5.jpeg" alt="Attrape rêves" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Attrape rêves</h4>
+                        <p>
+                            Un attrape rêves en macramé pour ajouter une touche de magie à votre décoration.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+      
     
     <section id="materiel" class="categorie-creation">
         <div class="container">
-            <h3>Matériel</h3>
-            <p class="categorie-intro">
-                Présentation du matériel utilisé, astuces et conseils pour bien débuter la couture ou le macramé.
-            </p>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/materiel/matos1.jpeg" alt="Surfileuse" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Surfileuse</h4>
-                    <p>
-                        La surfileuse est un outil indispensable pour réaliser des finitions parfaites sur vos créations.
-                        Elle permet d'éviter l'effilochage des tissus et de donner un aspect professionnel à vos ouvrages.
-                    </p>
-                </div>
-            </div>
+            <!-- Bouton dropdown stylisé -->
+            <button class="accordion-btn" aria-expanded="false" aria-controls="materiel-content" id="materiel-btn">
+                Matériel
+                <span class="accordion-arrow">&#9662;</span>
+            </button>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/materiel/matos2.jpeg" alt="Machine à coudre" class="carousel-img active">
+            <!-- Contenu masqué/affiché au clic -->
+            <div class="accordion-content" id="materiel-content" role="region" aria-labelledby="materiel-btn" hidden>
+                <h3>Matériel</h3>
+                <p class="categorie-intro">
+                    Présentation du matériel utilisé, astuces et conseils pour bien débuter la couture ou le macramé.
+                </p>
+    
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/materiel/matos1.jpeg" alt="Surfileuse" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Surfileuse</h4>
+                        <p>
+                            La surfileuse est un outil indispensable pour réaliser des finitions parfaites sur vos
+                            créations.
+                            Elle permet d'éviter l'effilochage des tissus et de donner un aspect professionnel à vos
+                            ouvrages.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Machine à coudre</h4>
-                    <p>
-                        La machine à coudre est l'outil de base pour toute couturière. Elle permet de coudre rapidement et
-                        efficacement vos tissus, que ce soit pour des vêtements, des accessoires ou de la décoration.
-                    </p>
+    
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/materiel/matos2.jpeg" alt="Machine à coudre" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Machine à coudre</h4>
+                        <p>
+                            La machine à coudre est l'outil de base pour toute couturière. Elle permet de coudre rapidement
+                            et
+                            efficacement vos tissus, que ce soit pour des vêtements, des accessoires ou de la décoration.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+      
     
     <section id="divers" class="categorie-creation">
         <div class="container">
-            <h3>Divers</h3>
-            <p class="categorie-intro">
-                Créations originales, accessoires uniques, objets déco ou projets spéciaux qui ne rentrent pas dans les
-                autres catégories.
-            </p>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/divers/divers1.jpeg" alt="Lapin doudou" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Lapin doudou</h4>
-                    <p>
-                        Un adorable lapin doudou fait main, parfait pour les enfants ou comme objet de décoration.
-                    </p>
-                </div>
-            </div>
+            <!-- Bouton dropdown stylisé -->
+            <button class="accordion-btn" aria-expanded="false" aria-controls="divers-content" id="divers-btn">
+                Divers
+                <span class="accordion-arrow">&#9662;</span>
+            </button>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/divers/divers3.jpeg" alt="Lapin" class="carousel-img active">
-                </div>
-                <div class="card-content">
-                    <h4>Lapin</h4>
-                    <p>
-                        Un joli lapin en tissu, parfait pour décorer une chambre d'enfant ou comme cadeau.
-                    </p>
-                </div>
-            </div>
+            <!-- Contenu masqué/affiché au clic -->
+            <div class="accordion-content" id="divers-content" role="region" aria-labelledby="divers-btn" hidden>
+                <h3>Divers</h3>
+                <p class="categorie-intro">
+                    Créations originales, accessoires uniques, objets déco ou projets spéciaux qui ne rentrent pas dans les
+                    autres catégories.
+                </p>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/divers/divers4.jpeg" alt="Coussin pour chat" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/divers/divers1.jpeg" alt="Lapin doudou" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Lapin doudou</h4>
+                        <p>
+                            Un adorable lapin doudou fait main, parfait pour les enfants ou comme objet de décoration.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Coussin pour chat</h4>
-                    <p>
-                        Un endroit ou votre chat aimera venir s'y cacher pour dormir ou jouer.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/divers/divers5.jpeg" alt="Bob" class="carousel-img">
-                    <img src="public/assets/divers/divers6.jpeg" alt="Bob" class="carousel-img active">
-                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/divers/divers3.jpeg" alt="Lapin" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Lapin</h4>
+                        <p>
+                            Un joli lapin en tissu, parfait pour décorer une chambre d'enfant ou comme cadeau.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Bob</h4>
-                    <p>
-                        Un petit bob réversible parfait pour l'été, avec un côté coloré et un côté plus sobre.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/divers/divers7.jpeg" alt="Chauferette" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/divers/divers4.jpeg" alt="Coussin pour chat" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Coussin pour chat</h4>
+                        <p>
+                            Un endroit où votre chat aimera venir s'y cacher pour dormir ou jouer.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Chauferette</h4>
-                    <p>
-                        Une chaufferette en tissu, idéale pour se réchauffer les mains pendant les froides journées
-                        d'hiver.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/divers/divers8.jpeg" alt="Manique" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/divers/divers5.jpeg" alt="Bob" class="carousel-img">
+                        <img src="public/assets/divers/divers6.jpeg" alt="Bob" class="carousel-img active">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>Bob</h4>
+                        <p>
+                            Un petit bob réversible parfait pour l'été, avec un côté coloré et un côté plus sobre.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Manique</h4>
-                    <p>
-                        Une manique colorée pour protéger vos mains lors de la cuisson, tout en ajoutant une touche de
-                        couleur à votre cuisine.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/divers/divers9.jpeg" alt="Tabliers" class="carousel-img">
-                    <img src="public/assets/divers/divers10.jpeg" alt="Tabliers" class="carousel-img active">
-                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/divers/divers7.jpeg" alt="Chauferette" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Chauferette</h4>
+                        <p>
+                            Une chaufferette en tissu, idéale pour se réchauffer les mains pendant les froides journées
+                            d'hiver.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Tabliers</h4>
-                    <p>
-                        Des tabliers colorés et pratiques pour cuisiner avec style.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/divers/divers11.jpeg" alt="Hibou organiseur" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/divers/divers8.jpeg" alt="Manique" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Manique</h4>
+                        <p>
+                            Une manique colorée pour protéger vos mains lors de la cuisson, tout en ajoutant une touche de
+                            couleur à votre cuisine.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Hibou organiseur</h4>
-                    <p>
-                        Un hibou en tissu qui sert d'organisateur pour vos petits accessoires, à la fois pratique et
-                        décoratif.
-                    </p>
-                </div>
-            </div>
     
-            <div class="card">
-                <div class="carousel">
-                    <img src="public/assets/divers/divers12.jpeg" alt="Support tablette" class="carousel-img active">
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/divers/divers9.jpeg" alt="Tabliers" class="carousel-img">
+                        <img src="public/assets/divers/divers10.jpeg" alt="Tabliers" class="carousel-img active">
+                        <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="card-content">
+                        <h4>Tabliers</h4>
+                        <p>
+                            Des tabliers colorés et pratiques pour cuisiner avec style.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h4>Support tablette</h4>
-                    <p>
-                        Un support en tissu pour tablette, pratique pour regarder des vidéos ou lire confortablement.
-                    </p>
+    
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/divers/divers11.jpeg" alt="Hibou organiseur" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Hibou organiseur</h4>
+                        <p>
+                            Un hibou en tissu qui sert d'organisateur pour vos petits accessoires, à la fois pratique et
+                            décoratif.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="carousel">
+                        <img src="public/assets/divers/divers12.jpeg" alt="Support tablette" class="carousel-img active">
+                    </div>
+                    <div class="card-content">
+                        <h4>Support tablette</h4>
+                        <p>
+                            Un support en tissu pour tablette, pratique pour regarder des vidéos ou lire confortablement.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+      
 
       
     <!-- // CREATION //
