@@ -47,56 +47,234 @@
     <section id="creation">
         <div class="container">
             <h2>Mes Créations</h2>
-            <div class="content-wrapper">
-                <div class="image-wrapper">
-                    <img src="./public/assets/baby-gif.gif" alt="Karate Chick">
-                    <img class="aura" src="./public/assets/aura.png" alt="Aura">
-                </div>
-                <p class="first-p mobile">
-                    Je partage ici un savoir faire que j'ai acquis au fil des années, un savoir faire qui me permet de créer
-                    des vetements,
-                    des accessoires, des peluches et de la décoration.
-                </p>
+            <div class="img-categorie-accueil">
+                <img src="./public/assets/baby-gif.gif" alt="Présentation des catégories de créations">
             </div>
-            <p>Je suis passionné par la couture et je souhaite partager cette passion avec vous.</p>
+            <p class="intro-creation">
+                Découvrez ci-dessous toutes mes réalisations, classées par univers : sacs, pochettes, macramé, accessoires,
+                matériel... Cliquez sur une catégorie pour voir tous les modèles !
+            </p>
         </div>
-        <div class="card-creation">
+    </section>
+      
+    
+    <section id="sacs" class="categorie-creation">
+        <div class="container">
+            <h3>Sacs</h3>
+            <p class="categorie-intro">
+                Sacs à main, cabas, tote-bags... Des modèles uniques cousus main pour toutes les occasions.
+            </p>
+
             <div class="card">
-                <h3>Création 1</h3>
-                <div class="card-image">
-                    <img src="public/assets/creation1.jpg" alt=" photo Création 1">
+                <div class="carousel">
+                    <img src="public/assets/sacs/sac12.jpeg" alt="sac12" class="carousel-img active">
+                    <img src="public/assets/sacs/sac12-1.jpeg" alt="Sac12" class="carousel-img">
+                    <img src="public/assets/sacs/sac12-2.jpeg" alt="Sac12" class="carousel-img">
+                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
                 </div>
                 <div class="card-content">
-                    <p>Une description de la création 1</p>
-                    <a href="https://www.google.com" class="cta">En savoir plus</a>
+                    <h4>Sac banane</h4>
+                    <p> 
+                        Une petite banane pratique et stylée, parfaite pour les sorties décontractées.
+                    </p>
                 </div>
             </div>
-        </div>
-        <div class="card-creation">
+
             <div class="card">
-                <h3>Création 2</h3>
-                <div class="card-image">
-                    <img src="public/assets/creation1.jpg" alt=" photo Création 2">
+                <div class="carousel">
+                    <img src="public/assets/sacs/sac4.jpeg" alt="Sac4" class="carousel-img active">
+                    <img src="public/assets/sacs/sac4-1.jpeg" alt="Sac4" class="carousel-img">
+                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
                 </div>
                 <div class="card-content">
-                    <p>Une description de la création 2</p>
-                    <a href="https://www.google.com" class="cta">En savoir plus</a>
+                    <h4>Sac Isoterme</h4>
+                    <p>
+                        Un sac isotherme pratique pour transporter vos boissons tout en gardant la chaleur ou la
+                        fraîcheur.
+                    </p>
                 </div>
             </div>
-        </div>
-        <div class="card-creation">
+
             <div class="card">
-                <h3>Création 3</h3>
-                <div class="card-image">
-                    <img src="public/assets/creation1.jpg" alt=" photo Création 3">
+                <div class="carousel">
+                    <img src="public/assets/sacs/sac6.jpeg" alt="Sac6" class="carousel-img active">
+                    <img src="public/assets/sacs/sac6-1.jpeg" alt="Sac6" class="carousel-img">
+                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>
                 </div>
                 <div class="card-content">
-                    <p>Une description de la création 3</p>
-                    <a href="https://www.google.com" class="cta">En savoir plus</a>
+                    <h4>Sac à main</h4>
+                    <p>
+                        Sac à main + pochettes, avec rangement intérieur, idéal pour le quotidien.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="carousel">
+                    <img src="public/assets/sacs/sac1.jpeg" alt="Sac6" class="carousel-img">
+                    <img src="public/assets/sacs/sac5.jpeg" alt="Sac6" class="carousel-img active">
+                    <button class="carousel-btn prev" onclick="changeSlide(this, -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="changeSlide(this, 1)">&#10095;</button>                </div>
+                <div class="card-content">
+                    <h4>Sac à main</h4>
+                    <p>
+                        Sac à main élégant et pratique en simili cuir.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="carousel">
+                    <img src="public/assets/sacs/sac2.jpeg" alt="Sac2" class="carousel-img active">
+                </div>
+                <div class="card-content">
+                    <h4>Petit sac</h4>
+                    <p>
+                        Petit sac banane discret et facile à transporter.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="carousel">
+                    <img src="public/assets/sacs/sac3.jpeg" alt="Sac3" class="carousel-img active">
+                </div>
+                <div class="card-content">
+                    <h4>Sac à main</h4>
+                    <p>
+                        Sobre et élégant pour sortir.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="carousel">
+                    <img src="public/assets/sacs/sac7.jpeg" alt="Sac7" class="carousel-img active">
+                </div>
+                <div class="card-content">
+                    <h4>Sac à main</h4>
+                    <p>
+                        Sac tout rond et tout mignon.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="carousel">
+                    <img src="public/assets/sacs/sac8.jpeg" alt="Sac8" class="carousel-img active">
+                </div>
+                <div class="card-content">
+                    <h4>Sacoche</h4>
+                    <p>
+                        Colorée et fun.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="carousel">
+                    <img src="public/assets/sacs/sac9.jpeg" alt="Sac9" class="carousel-img active">
+                </div>
+                <div class="card-content">
+                    <h4>Tote Bag</h4>
+                    <p>
+                        On y met ce qu'on veut : ses courses ou son maillot de bain .
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="carousel">
+                    <img src="public/assets/sacs/sac10.jpeg" alt="Sac10" class="carousel-img active">
+                </div>
+                <div class="card-content">
+                    <h4>Tote Bag</h4>
+                    <p>
+                        Idéal pour les courses et se replie pour le ranger.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="carousel">
+                    <img src="public/assets/sacs/sac11.jpeg" alt="Sac11" class="carousel-img active">
+                </div>
+                <div class="card-content">
+                    <h4>Banane Sacoche</h4>
+                    <p>
+                        Peut se porter discretement sous les vetements, idéale pour les voyages.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="carousel">
+                    <img src="public/assets/sacs/sac13.jpeg" alt="Sac13" class="carousel-img active">
+                </div>
+                <div class="card-content">
+                    <h4>Banane</h4>
+                    <p>
+                        En bandouilière, vous pouvez tout y mettre.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+      
+    
+    <section id="pochettes" class="categorie-creation">
+        <div class="container">
+            <h3>Pochettes</h3>
+            <p class="categorie-intro">
+                Pochettes, trousses et petits rangements pratiques et personnalisés.
+            </p>
+            <div class="card-creation">
+                <!-- ...card(s) pochettes... -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="macrame" class="categorie-creation">
+        <div class="container">
+            <h3>Macramé</h3>
+            <p class="categorie-intro">
+                Décorations murales, suspensions et accessoires en macramé faits main.
+            </p>
+            <div class="card-creation">
+                <!-- ...card(s) macramé... -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="materiel" class="categorie-creation">
+        <div class="container">
+            <h3>Matériel</h3>
+            <p class="categorie-intro">
+                Présentation du matériel utilisé, astuces et conseils pour bien débuter la couture ou le macramé.
+            </p>
+            <div class="card-creation">
+                <!-- ...card(s) matériel... -->
+            </div>
+        </div>
+    </section>
+      
+    <section id="divers" class="categorie-creation">
+        <div class="container">
+            <h3>Divers</h3>
+            <p class="categorie-intro">
+                Créations originales, accessoires uniques, objets déco ou projets spéciaux qui ne rentrent pas dans les
+                autres catégories.
+            </p>
+            <div class="card-creation">
+                <!-- ...card(s) divers... -->
+            </div>
+        </div>
+    </section>
+      
     <!-- // CREATION //
     //////////////////////////////////////////////////
     //////////////////////////////////////////////////

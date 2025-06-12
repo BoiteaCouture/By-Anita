@@ -65,3 +65,13 @@ document.addEventListener("DOMContentLoaded", function () {
   //////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////
+  function changeSlide(btn, n) {
+    const carousel = btn.parentElement;
+    const images = carousel.querySelectorAll(".carousel-img");
+    let idx = Array.from(images).findIndex((img) =>
+      img.classList.contains("active")
+    );
+    images[idx].classList.remove("active");
+    idx = (idx + n + images.length) % images.length;
+    images[idx].classList.add("active");
+  }
