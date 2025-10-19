@@ -598,6 +598,12 @@ nav i {
   margin-top: 0.5rem;
 }
 
+.accordion-content[aria-expanded="true"],
+.accordion-content:not([hidden]) {
+  scroll-margin-top: calc(var(--header-height) + 10px);
+}
+
+
 /* FOOTER */
 footer {
   background-color: var(--header-footer-bg);
