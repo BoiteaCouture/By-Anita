@@ -56,6 +56,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+
+  const compteurImg = document.querySelector(".mini-compteur");
+  if (compteurImg) {
+    const url = compteurImg.src.split("?")[0]; // URL sans paramètre
+    compteurImg.src = url + "?cb=" + new Date().getTime(); // ajoute timestamp pour forcer rechargement
+  }
+
 });
 
 
