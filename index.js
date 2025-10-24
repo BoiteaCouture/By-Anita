@@ -32,31 +32,39 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("#nav-menu a").forEach((link) => {
     link.addEventListener("click", (event) => {
       toggleMenu(false);
-      
     });
   });
 
-const hash = window.location.hash;
-if (hash) {
-  // Exemple : #sacs  -> bouton :  #sacs-btn,  contenu :  #sacs-content
-  const btn = document.querySelector(hash + "-btn");
-  const content = document.querySelector(hash + "-content");
+  const hash = window.location.hash;
+  if (hash) {
+    // Exemple : #sacs  -> bouton :  #sacs-btn,  contenu :  #sacs-content
+    const btn = document.querySelector(hash + "-btn");
+    const content = document.querySelector(hash + "-content");
 
-  if (btn && content) {
-    // Ouvre le bon accordion
-    btn.setAttribute("aria-expanded", "true");
-    content.removeAttribute("hidden");
+    if (btn && content) {
+      // Ouvre le bon accordion
+      btn.setAttribute("aria-expanded", "true");
+      content.removeAttribute("hidden");
 
-    // Facultatif : ajouter une classe visuelle si tu en as une (ex: "open")
-    btn.classList.add("open");
+      // Facultatif : ajouter une classe visuelle si tu en as une (ex: "open")
+      btn.classList.add("open");
 
-    // Défilement vers la section ouverte
-    setTimeout(() => {
-      content.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 300);
+      // Défilement vers la section ouverte
+      setTimeout(() => {
+        content.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 300);
+    }
   }
-}
 
+  // COMPTEUR DE VISITEURS //
+  fetch("https://api.countapi.xyz/hit/boiteacouture.github.io/visits")
+    .then((response) => response.json())
+    .then((data) => {
+      document.getElementById("visitor-count").textContent = data.value;
+    })
+    .catch((error) => {
+      console.error("Erreur lors de la récupération du compteur :", error);
+    });
 });
 
 

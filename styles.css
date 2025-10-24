@@ -644,6 +644,30 @@ footer {
   text-decoration: underline;
 }
 
+
+.visitor-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #444;
+    gap: 5px;
+}
+
+.visitor-counter i {
+    margin-right: 8px;
+    color: #444;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .visitor-counter {
+        font-size: 0.9rem;
+    }
+}
+
+
 /* MEDIA QUERIES */
 @media only screen and (min-width: 48rem) {
   .container {
