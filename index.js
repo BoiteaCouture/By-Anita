@@ -56,15 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // COMPTEUR DE VISITEURS //
-  fetch("https://api.countapi.xyz/hit/boiteacouture.github.io/visits")
-    .then((response) => response.json())
-    .then((data) => {
-      document.getElementById("visitor-count").textContent = data.value;
-    })
-    .catch((error) => {
-      console.error("Erreur lors de la récupération du compteur :", error);
-    });
 });
 
 
